@@ -1,0 +1,157 @@
+.contact {
+  padding: 6rem 2rem;
+  background: #fff;
+}
+
+.contact__header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 4rem;
+}
+
+.contact__wrapper {
+  display: flex;
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.contact__form {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact__field label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.contact__field input,
+.contact__field select,
+.contact__field textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e2e5ef;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  outline: none;
+  resize: none;
+}
+
+.contact__field input:focus,
+.contact__field select:focus,
+.contact__field textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.contact__field select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%236366f1' d='M4.5 6l3.5 4 3.5-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px;
+  padding-right: 2.5rem;
+}
+
+.contact__submit {
+  align-self: flex-start;
+  padding: 0.8rem 2rem;
+}
+
+.contact__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-top: 0.5rem;
+}
+
+.contact__info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact__info-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.contact__info-label {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin: 0;
+  font-weight: 500;
+}
+
+.contact__info-value {
+  font-size: 0.98rem;
+  color: var(--color-dark);
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact__success {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact__success-icon {
+  font-size: 4rem;
+}
+
+.contact__success h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+.contact__success p {
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .contact__wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact__row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__submit {
+    align-self: stretch;
+    text-align: center;
+  }
+}
